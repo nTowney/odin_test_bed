@@ -3,8 +3,32 @@
     <head>
         <meta charset="UTF-8" lang="en">
         <title>Test Bed</title>
+        <link rel="stylesheet" href="./test-bed.css">
     </head>
+    <body>
+        <h1>Test Bed</h1>
+        <div>
+            <script>
+                // prompt("User name?")
+                let user = prompt("User name?")
+                if(user == "admin"){
+                    let password = prompt("Password")
+                } else {
+                    console.log("access denied");
+                }
+                if(password == "guest"){
+                    console.log("Welcome")
+                } else {
+                    console.log("Incorrect password");
+                }
+            </script>
+        </div>
 
+
+
+
+
+    </body>
 
 
 
