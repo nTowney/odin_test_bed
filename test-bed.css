@@ -3,3 +3,10 @@ html{
     color: aqua;
     background-color: indigo;
 }
+
+.script-box{
+    width: 600px;
+    height: 800px;
+    border: solid 2px aqua;
+    border-radius: 20px;
+}
