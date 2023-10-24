@@ -4,9 +4,18 @@ html{
     background-color: indigo;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+}
+
 .script-box{
     width: 600px;
-    height: 800px;
+    height: 600px;
     border: solid 2px aqua;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }

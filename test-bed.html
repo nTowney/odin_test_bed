@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./test-bed.css">
     </head>
     <body>
-        <h1>Test Bed</h1>
+        <h1 class="header">Test Bed</h1>
         <div class="script-box">
             <h2> Putting something here to show content</h2>
             <script>
@@ -15,7 +15,7 @@
                 if(user == "admin"){
                     let password = prompt("Password")
                 } else {
-                    console.log("access denied");
+                    alert("access denied");
                 }
                 if(password == "guest"){
                     console.log("Welcome")
