@@ -17,7 +17,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     margin: auto;
 }
 
@@ -28,7 +27,19 @@ html{
     align-self: stretch;
     margin-top: auto;
     margin-bottom: auto;
+    flex-wrap: wrap;
+    /* gap: 75px; */
 
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-wrap: wrap;
+    /* gap: 75px; */
 }
 
 .box{
@@ -39,4 +50,6 @@ html{
     width: 50px;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    text-align: center;
 }
