@@ -15,6 +15,27 @@
                 }
 
                 console.log(favoriteAnimal('Goat'))
+
+                function add7(num) {
+                    return num +7
+                }
+
+                console.log(add7(8))
+
+                function multiply(num1, num2){
+                    return num1 * num2
+                }
+
+                console.log(multiply(prompt("Number 1"),prompt("Number 2")))
+
+                function capitalize(string){
+                    let lower = string.toLowerCase();
+                    let firstChar = (lower.charAt(0)).toUpperCase();
+                    let properCase = firstChar + lower.substring(1);
+                    return properCase;
+                }
+                
+                console.log(capitalize(prompt("Enter a string")));
             </script>
 
             <div class="container">
