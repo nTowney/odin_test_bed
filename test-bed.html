@@ -10,32 +10,57 @@
         <div class="script-box">
             <h2> Putting something here to show content</h2>
             <script>
-                function favoriteAnimal(pet) {
-                     return pet + " is my favorite animal!"
-                }
+                // function favoriteAnimal(pet) {
+                //      return pet + " is my favorite animal!"
+                // }
 
-                console.log(favoriteAnimal('Goat'))
+                // console.log(favoriteAnimal('Goat'))
 
-                function add7(num) {
-                    return num +7
-                }
+                // function add7(num) {
+                //     return num +7
+                // }
 
-                console.log(add7(8))
+                // console.log(add7(prompt("Number to be multiplied by 7")));
 
-                function multiply(num1, num2){
-                    return num1 * num2
-                }
+                // function multiply(num1, num2){
+                //     return num1 * num2
+                // }
 
-                console.log(multiply(prompt("Number 1"),prompt("Number 2")))
+                // console.log(multiply(prompt("Number 1"),prompt("Number 2")));
 
-                function capitalize(string){
-                    let lower = string.toLowerCase();
-                    let firstChar = (lower.charAt(0)).toUpperCase();
-                    let properCase = firstChar + lower.substring(1);
-                    return properCase;
-                }
+                // function capitalize(string){
+                //     let lower = string.toLowerCase();
+                //     let firstChar = (lower.charAt(0)).toUpperCase();
+                //     let properCase = firstChar + lower.substring(1);
+                //     return properCase;
+                // }
                 
-                console.log(capitalize(prompt("Enter a string")));
+                // console.log(capitalize(prompt("Enter a string")));
+
+                // function lastLetter(string2){
+                //     return string2.slice(-1);
+                // }
+
+                // console.log(lastLetter(prompt("Enter a word")));
+
+                //fizz buzz
+                //user picks a number
+                //if the number is divisible by 3, print "fizz"
+                //if the number is divisible by 5, print "buzz"
+                //if the number is divisible by 3 and 5, print "fizz buzz"
+
+                let answer = parseInt(prompt("Pick a number greater than 10"));
+                    for (let i = 1; i <= answer; i++) {
+                        if (i % 3 === 0 && i % 5 === 0){
+                            console.log("FizzBuzz");
+                        } else if (i % 3 === 0){
+                            console.log("Fizz");
+                        } else if (i % 5 === 0){
+                            console.log("Buzz");
+                        } else {
+                        console.log(i)
+                        }
+                    }
             </script>
 
             <div class="container">
