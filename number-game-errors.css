@@ -1,0 +1,16 @@
+html{
+    background-color: indigo;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aqua;
+}
+
+.form{
+    border: solid 2px aqua;
+    border-radius: 10px;
+}
+
+.content{
+    border: solid 2px aqua;
+    border-radius: 10px;
+    text-align: center;
+}
