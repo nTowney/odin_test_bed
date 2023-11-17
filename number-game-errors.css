@@ -22,7 +22,8 @@ html{
     color: indigo;
 }
 
-.guessSubmit{
+.guessSubmit,
+.resultParas{
     color: aqua;
     background-color: rgba(0, 0, 128, 0.668);
     border: 2px solid aqua;
