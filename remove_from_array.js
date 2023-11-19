@@ -1,7 +1,4 @@
 function removeFromArray(array, itemToRemove) {
-    // identify the index number of the itemToRemove;
-    // move the item at that index to the end;
-    // use shift or pop to remove it.
     
     // I'm going to try and use the rest parameter to take multiple arguments
     // This makes the remaining arguments an array;
@@ -13,11 +10,14 @@ function removeFromArray(array, itemToRemove) {
     
     // for (i = 0; i <= itemToRemove.length; i ++){
     // array.splice(array.indexOf(itemToRemove.indexOf(itemToRemove)), 1)
-    array.splice(array.indexOf(itemToRemove), 1);
- 
-    return array;
+    // array.splice(array.indexOf(itemToRemove), 1);
+    
+    // this checks if the value is not in the array
+    if (array.indexOf(itemToRemove) > 0){
+    return itemToRemove;
+} else {return "Not in array"};
 }
-    console.log(removeFromArray([1, 2, 3, 4], "taco"));
+    console.log(removeFromArray([1, 2, 3, 4], 5));
 
 
 // TIME FOR SOME REAL PSEUDOCODE//
