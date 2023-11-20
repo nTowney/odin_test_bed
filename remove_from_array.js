@@ -1,4 +1,4 @@
-function removeFromArray(array, itemToRemove) {
+function removeFromArray(array, ...itemToRemove) {
     
     // I'm going to try and use the rest parameter to take multiple arguments
     // This makes the remaining arguments an array;
@@ -10,14 +10,19 @@ function removeFromArray(array, itemToRemove) {
     
     // for (i = 0; i <= itemToRemove.length; i ++){
     // array.splice(array.indexOf(itemToRemove.indexOf(itemToRemove)), 1)
-    // array.splice(array.indexOf(itemToRemove), 1);
-    
+    // 
+
     // this checks if the value is not in the array
-    if (array.indexOf(itemToRemove) > 0){
-    return itemToRemove;
-} else {return "Not in array"};
+    let newArray = array
+    for (i=0; i < (arguments.length); i ++);{
+        if (array.indexOf(...itemToRemove) > 0){
+            array.splice(array.indexOf(...itemToRemove), 1);
+            newArray += array;
+        }
+    }
+    return newArray;
 }
-    console.log(removeFromArray([1, 2, 3, 4], 5));
+    console.log(removeFromArray([1, 2, 3, 4], 2, 3));
 
 
 // TIME FOR SOME REAL PSEUDOCODE//
