@@ -13,14 +13,18 @@ function removeFromArray(array, ...itemToRemove) {
     // 
 
     // this checks if the value is not in the array
-    let newArray = array
-    for (i=0; i < (arguments.length); i ++);{
-        if (array.indexOf(...itemToRemove) > 0){
-            array.splice(array.indexOf(...itemToRemove), 1);
-            newArray += array;
-        }
+    // let newArray = array
+    // for (i=0; i < (arguments.length); i ++);{
+    //     if (array.indexOf(...itemToRemove) > 0){
+    //         array.splice(array.indexOf(...itemToRemove), 1);
+    //         newArray += array;
+    //     }
+    // }
+    
+    let argPos = arguments.length -1;
+    for (i=0; i<= argPos; i ++){
+        console.log(arguments[argPos]);
     }
-    return newArray;
 }
     console.log(removeFromArray([1, 2, 3, 4], 2, 3));
 
