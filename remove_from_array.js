@@ -15,8 +15,12 @@ function removeFromArray(array, ...itemToRemove) {
 
     for (const arg of args){
         // console.log(arg);
-        if (array.indexOf(arg) > 0){
+        // going to check if the item is in index 0
+        if (array.indexOf(arg) === 0){
+            array.splice(0, 1);
+        } else if (array.indexOf(arg) > 0){
             // this checks to see if the item is in the array
+            console.log(array.indexOf(arg));
             // console.log(arg);
             array.splice(array.indexOf(arg), 1);
         }
@@ -27,7 +31,11 @@ console.log(array)
 //     array.splice(array.indexOf(itemToRemove), 1);
 //    }
 }
-    console.log(removeFromArray([1, 2, 3, 4], 3, 2));
+    console.log(removeFromArray([1, 2, 3, "taco", "burrito", 4], 1, 2, "taco"));
+
+// current problem:
+// the function will not remove an item if it is in index 0 of the array
+
 
 
 // TIME FOR SOME REAL PSEUDOCODE//
