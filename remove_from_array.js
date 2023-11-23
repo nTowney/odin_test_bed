@@ -5,28 +5,29 @@ function removeFromArray(array, ...itemToRemove) {
     // With the arguments in an array, I should be able to use a loop to check each one until finished
     // becomes: [[1, 2, 3, 4], 3, 2]
     // 1,2,3,43,2
-    // itemToRemove.length = 2
-    // for loop for the length of the ...item array?
-    
-    // for (i = 0; i <= itemToRemove.length; i ++){
-    // array.splice(array.indexOf(itemToRemove.indexOf(itemToRemove)), 1)
-    // 
 
-    // this checks if the value is not in the array
-    // let newArray = array
-    // for (i=0; i < (arguments.length); i ++);{
-    //     if (array.indexOf(...itemToRemove) > 0){
-    //         array.splice(array.indexOf(...itemToRemove), 1);
-    //         newArray += array;
-    //     }
-    // }
-    
-    let argPos = arguments.length -1;
-    for (i=0; i<= argPos; i ++){
-        console.log(arguments[argPos]);
+    // the for loop should loop through for..of
+
+    const args = itemToRemove;
+    // this turns all arguments into an array
+
+    // console.log(args);
+
+    for (const arg of args){
+        // console.log(arg);
+        if (array.indexOf(arg) > 0){
+            // this checks to see if the item is in the array
+            // console.log(arg);
+            array.splice(array.indexOf(arg), 1);
+        }
+        // console.log(array);
     }
+console.log(array)
+//    if (array.indexOf(itemToRemove) > 0){
+//     array.splice(array.indexOf(itemToRemove), 1);
+//    }
 }
-    console.log(removeFromArray([1, 2, 3, 4], 2, 3));
+    console.log(removeFromArray([1, 2, 3, 4], 3, 2));
 
 
 // TIME FOR SOME REAL PSEUDOCODE//
