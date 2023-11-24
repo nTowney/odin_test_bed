@@ -3,6 +3,7 @@ const sumAll = function(num1, num2) {
 // add one to it to get the next number up
 // add the number to the one behind it
 // loop that way
+
 };
 
 // Do not edit below this line
