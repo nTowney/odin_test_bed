@@ -1,13 +1,25 @@
-const sumAll = function(num1, num2) {
+function sumAll(num1, num2) {
 // start with the small number
 // add one to it to get the next number up
 // add the number to the one behind it
 // loop that way
+// check which number is smallest first?
 
+// turn the spread into an array and cycle through the indexes as i?
+
+let newSum = num1;
+for (i=1; i<=num2-num1; i++){
+    let nextSum = newSum + 1;
+    console.log(nextSum);
+    newSum += nextSum;
+}
+console.log(newSum);
 };
 
+console.log(sumAll(2, 5));
+
 // Do not edit below this line
-module.exports = sumAll;
+// module.exports = sumAll;
 
 
 // 
