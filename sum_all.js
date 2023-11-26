@@ -7,16 +7,31 @@ function sumAll(num1, num2) {
 
 // turn the spread into an array and cycle through the indexes as i?
 
-let newSum = num1;
-for (i=1; i<=num2-num1; i++){
-    let nextSum = newSum + 1;
-    console.log(nextSum);
-    newSum += nextSum;
+if (num1<0 || num2<0 || (typeof(num1) != 'number') || (typeof(num2) != 'number')){
+    return "ERROR"
+}else 
+if (num1 < num2){
+    let newSum = num1;
+    let nextNum = num1 + 1;
+    for (i=1; i<=num2-num1; i++){
+    
+    // console.log(newSum);
+        newSum += nextNum;
+        nextNum += 1;
+    }
+// console.log(newSum);
+    return newSum;
+} else {
+    let newSum = num2;
+    let nextNum = num2 + 1;
+    for (i=1; i<=num1-num2; i++){
+        newSum += nextNum;
+        nextNum += 1;
+    }
+    return newSum;
 }
-console.log(newSum);
-};
-
-console.log(sumAll(2, 5));
+}
+console.log(sumAll('1', [90, 1]));
 
 // Do not edit below this line
 // module.exports = sumAll;
