@@ -1,9 +1,12 @@
-const leapYears = function() {
-
+function leapYears(year) {
+// check if year is divisible by 400 and 100
+if (((year % 400) === 0 && (year % 100) === 0) || ((year % 4) === 0)){
+    return 'Leap Year'
+} else {return 'Not a leap year'}
 };
-
+console.log(leapYears(1997));
 // Do not edit below this line
-module.exports = leapYears;
+// module.exports = leapYears;
 
 // # Exercise 06 - leapYears
 
