@@ -1,14 +1,20 @@
-const convertToCelsius = function() {
+function convertToCelsius(tempF) {
+    let convertedToC = (tempF-32) * 5/9;
+    let roundedC = convertedToC.toFixed(1);
+    return roundedC
 };
-
-const convertToFahrenheit = function() {
+console.log(convertToCelsius(32));
+function convertToFahrenheit(tempC) {
+    let convertedToF = (tempC * 9/5) + 32;
+    let roundedF = convertedToF.toFixed(1);
+    return roundedF;
 };
-
-// Do not edit below this line
-module.exports = {
-  convertToCelsius,
-  convertToFahrenheit
-};
+console.log(convertToFahrenheit(100));
+// // Do not edit below this line
+// module.exports = {
+//   convertToCelsius,
+//   convertToFahrenheit
+// };
 
 // # Exercise 07 - tempConversion
 
