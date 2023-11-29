@@ -1,15 +1,19 @@
 function convertToCelsius(tempF) {
     let convertedToC = (tempF-32) * 5/9;
-    let roundedC = convertedToC.toFixed(1);
-    return roundedC
-};
-console.log(convertToCelsius(32));
+    if (convertedToC % 1 > 0){
+        let roundedC = convertedToC.toFixed(1);
+        return roundedC;
+    } else {return convertedToC};
+}
+console.log(convertToCelsius(46));
 function convertToFahrenheit(tempC) {
     let convertedToF = (tempC * 9/5) + 32;
-    let roundedF = convertedToF.toFixed(1);
-    return roundedF;
-};
-console.log(convertToFahrenheit(100));
+    if (convertedToF % 1 > 0){
+        let roundedF = convertedToF.toFixed(1);
+        return roundedF;
+    } else {return convertedToF};
+}
+console.log(convertToFahrenheit(-40));
 // // Do not edit below this line
 // module.exports = {
 //   convertToCelsius,
