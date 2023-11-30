@@ -4,16 +4,35 @@ function convertToCelsius(tempF) {
         let roundedC = convertedToC.toFixed(1);
         return roundedC;
     } else {return convertedToC};
+    
+    const container = document.querySelector('#container');
+
+    const content = document.createElement('div');
+    content.classList.add('content');
+    content.textContent = convertToCelsius(74);
+    
+    container.appendChild(content);
 }
-console.log(convertToCelsius(46));
+
+console.log(convertToCelsius(72));
+
 function convertToFahrenheit(tempC) {
     let convertedToF = (tempC * 9/5) + 32;
     if (convertedToF % 1 > 0){
         let roundedF = convertedToF.toFixed(1);
         return roundedF;
     } else {return convertedToF};
+
+
+const container = document.querySelector('#container');
+
+const content = document.createElement('div');
+content.classList.add('content');
+content.textContent = convertedToC;
+
+container.appendChild(content);
 }
-console.log(convertToFahrenheit(-40));
+console.log(convertToFahrenheit(20));
 // // Do not edit below this line
 // module.exports = {
 //   convertToCelsius,
