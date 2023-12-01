@@ -4,15 +4,15 @@ function convertToCelsius(tempF) {
         let roundedC = convertedToC.toFixed(1);
         return roundedC;
     } else {return convertedToC};
-    
-    const container = document.querySelector('#container');
+}  
+    const containerC = document.querySelector('#answerC');
 
-    const content = document.createElement('div');
-    content.classList.add('content');
-    content.textContent = convertToCelsius(74);
+    const contentC = document.createElement('div');
+    contentC.classList.add('content');
+    contentC.textContent = convertToCelsius(prompt('Temperature in Farenheit'));
     
-    container.appendChild(content);
-}
+    containerC.appendChild(contentC);
+
 
 console.log(convertToCelsius(72));
 
@@ -23,15 +23,15 @@ function convertToFahrenheit(tempC) {
         return roundedF;
     } else {return convertedToF};
 
-
-const container = document.querySelector('#container');
-
-const content = document.createElement('div');
-content.classList.add('content');
-content.textContent = convertedToC;
-
-container.appendChild(content);
 }
+    const containerF = document.querySelector('#answerF');
+
+    const content = document.createElement('div');
+    content.classList.add('content');
+    content.textContent = convertToFahrenheit(prompt('Temperature in Celsius'));
+
+    containerF.appendChild(content);
+
 console.log(convertToFahrenheit(20));
 // // Do not edit below this line
 // module.exports = {
