@@ -2,6 +2,7 @@ html{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: indigo;
     color: aqua;
+    box-sizing: border-box;
 }
 
 .title{
@@ -39,6 +40,7 @@ button{
     border-radius: 5px;
     color: aqua;
     font-weight: 800;
+    display: flex;
 }
 
 input{
@@ -47,19 +49,23 @@ input{
     border-radius: 4px;
     border: 2px solid darkblue;
     font-weight: 600;
+    display: flex;
 }
 
 label{
     font-weight: 700;
+    display: flex;
 }
 
 .inputBox{
     border: 2px solid aqua;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 15 px;
     align-items: center;
     width: fit-content;
     margin: auto;
+    flex-grow: 1;
 }
