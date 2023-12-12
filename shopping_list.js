@@ -1,19 +1,11 @@
-let item = document.querySelector('item');
+const input = document.querySelector('item');
 
-let list = document.querySelector('list');
+const button = document.querySelector('inputButton');
 
-let inputButton = document.querySelectorAll('button');
+const list = document.querySelector('list');
 
-function test(){
-    console.log('test');
-}
 
-function testInput(){
-    inputButton.addEventListener('click', test);
-}
 
-console.log(test);
-console.log(test2);
 // To start with, download a copy of our shopping-list.html starting file and make a copy of it somewhere. You'll see that it has some minimal CSS, a div with a label, input, and button, and an empty list and <script> element. You'll be making all your additions inside the script.
 //     Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
 //     Create a function that will run in response to the button being clicked.
