@@ -63,9 +63,7 @@ label{
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
-    gap: 15 px;
     align-items: center;
     width: fit-content;
-    margin: auto;
-    flex-grow: 1;
+    margin: auto;;
 }
