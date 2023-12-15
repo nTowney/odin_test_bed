@@ -13,3 +13,8 @@ Journal entry, 12/13/23 - Cyndi's grandma Angie was just admitted to the hospita
 with MRSA, she's 96 and the outlook so far isn't great... we spent a lot of time this
 evening talking and spending time together, I will continue my study on the MDN article
 for DOM manipulation tomorrow.
+------
+Journal entry, 12/14/23 - Angie was sent home from the hospital, apparently she's fine.
+I'm taking my time reading through the MDN article, and once I'm done, I'll check out a
+few YouTube tutorials as well. DOM manipulation is super important, so I want to make
+sure I actually understand it and am not just manipulating someone else's code.
