@@ -1,4 +1,6 @@
-let test = document.querySelector('text');
+const test = document.querySelector('.text');
+// const test = 'test works';
+const testResult = test.value;
 
 // To start with, download a copy of our shopping-list.html starting file and make a copy of it somewhere. You'll see that it has some minimal CSS, a div with a label, input, and button, and an empty list and <script> element. You'll be making all your additions inside the script.
 //     Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
