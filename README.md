@@ -18,3 +18,7 @@ Journal entry, 12/14/23 - Angie was sent home from the hospital, apparently she'
 I'm taking my time reading through the MDN article, and once I'm done, I'll check out a
 few YouTube tutorials as well. DOM manipulation is super important, so I want to make
 sure I actually understand it and am not just manipulating someone else's code.
+------
+Journal entry, 12/18/23 - Potty training is rough right now, particularly on Cyndi. Did
+not have any time tonight to dedicate to studying, I spent it all folding laundry and
+hanging out with Cyndi to cheer us both up. Will try more tomorrow.
